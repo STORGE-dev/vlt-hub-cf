@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* For changing the placeholder text color */
+/* For changing the placeholder text color */
+.ant-picker-input input::placeholder {
+  color: white !important;
+}
+.ant-picker:hover {
+  background-color: transparent !important;
+}  
+
+.ant-picker-suffix {
+  color: white !important;
+}
+
+.ant-modal .ant-modal-content {
+  background-color: #1d1d1d;
+}
+
+.ant-modal .ant-modal-header {
+  color: rgb(255, 255, 255);
+  background: #1d1d1d;
+}
+
+
+.ant-picker-input input::placeholder {
+  color: white !important;
+}
+
+.ant-picker:hover {
+  background-color: transparent !important;
+}
+
+.ant-picker-suffix {
+  color: white !important;
+}
+
+.ant-modal .ant-modal-content {
+  background-color: #1d1d1d;
+}
+
+.ant-modal .ant-modal-header {
+  color: rgb(255, 255, 255);
+  background: #1d1d1d;
+}
+
+.ant-modal .ant-modal-title {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.ant-picker-outlined {
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+}
+
+.ant-picker {
+  color: rgb(255, 255, 255);
+}
+
+.ant-picker .ant-picker-input-placeholder input {
+  color: rgb(255, 255, 255);
+}
+
+.ant-modal .ant-modal-close {
+  color: rgb(255, 255, 255);
+}
+
+.ant-pagination .ant-pagination-prev button,
+.ant-pagination .ant-pagination-next button {
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ant-switch {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+

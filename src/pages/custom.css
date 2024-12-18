@@ -1,0 +1,108 @@
+/* For changing the placeholder text color */
+.ant-picker-input input::placeholder {
+    color: white !important;
+  }
+  .ant-picker:hover {
+    background-color: transparent !important;
+  }  
+
+  .ant-picker-suffix {
+    color: white !important;
+  }
+
+  .ant-modal .ant-modal-content {
+    background-color: #1d1d1d;
+  }
+  
+  .ant-modal .ant-modal-header {
+    color: rgb(255, 255, 255);
+    background: #1d1d1d;
+  }
+
+
+  .ant-picker-input input::placeholder {
+    color: white !important;
+  }
+  
+  .ant-picker:hover {
+    background-color: transparent !important;
+  }
+  
+  .ant-picker-suffix {
+    color: white !important;
+  }
+  
+  .ant-modal .ant-modal-content {
+    background-color: #1d1d1d;
+  }
+  
+  .ant-modal .ant-modal-header {
+    color: rgb(255, 255, 255);
+    background: #1d1d1d;
+  }
+  
+  .ant-modal .ant-modal-title {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .ant-picker-outlined {
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+  }
+  
+  .ant-picker {
+    color: rgb(255, 255, 255);
+  }
+  
+  .ant-picker .ant-picker-input-placeholder input {
+    color: rgb(255, 255, 255);
+  }
+  
+  .ant-modal .ant-modal-close {
+    color: rgb(255, 255, 255);
+  }
+  
+  .ant-pagination .ant-pagination-prev button,
+  .ant-pagination .ant-pagination-next button {
+    color: rgba(255, 255, 255, 0.88);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .ant-switch {
+    background: rgba(255, 255, 255, 0.22);
+  }
+  
+
+.ant-segmented {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(47, 47, 47);
+    border-width: 0.2px;
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    display: inline-block;
+    background: #000000;
+    border-radius: 6px;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-segmented-item-label:hover{
+  color: rgb(165, 165, 165);
+}
+
+.ant-segmented-item ant-segmented-item-selected:hover{
+  color: black;
+}
