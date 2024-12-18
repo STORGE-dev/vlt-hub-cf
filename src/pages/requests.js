@@ -180,7 +180,7 @@ const Normal = () => {
 
 
       if (DispatchType === 'NRM') {
-        await axios.post('http://148.113.44.181:3000/trak24-liveupdate', {
+        await axios.post('/trak24-liveupdate', {
           Imei: inputValue,
           Date: TD.formattedDate,
           Time: TD.formattedTime,
@@ -191,7 +191,7 @@ const Normal = () => {
       } else {
         if (alertMode === false) {
           console.log('off')
-          await axios.post('http://148.113.44.181:3000/trak24-liveupdate-alert-off', {
+          await axios.post('/trak24-liveupdate-alert-off', {
             Imei: inputValue,
             Date: TD.formattedDate,
             Time: TD.formattedTime,
@@ -200,7 +200,7 @@ const Normal = () => {
           });
         } else {
           console.log('on')
-          await axios.post('http://148.113.44.181:3000/trak24-liveupdate-alert-on', {
+          await axios.post('/trak24-liveupdate-alert-on', {
             Imei: inputValue,
             Date: TD.formattedDate,
             Time: TD.formattedTime,
@@ -221,7 +221,7 @@ const Normal = () => {
 
   const IncrRequest = async () => {
     try {
-      const res = await axios.post("http://148.113.44.181:3000/api/v1/requests/incr-request",
+      const res = await axios.post("/api/v1/requests/incr-request",
         {
           updtId: updtId,
           Imei: inputValue,
@@ -246,7 +246,7 @@ const Normal = () => {
   const ConfirmFailedRequest = async () => {
     try {
       setIsSpin(true);
-      await axios.put("http://148.113.44.181:3000/api/v1/requests/update-status", {
+      await axios.put("/api/v1/requests/update-status", {
         updtId: updtId,
         status: "failed",
       });
@@ -283,12 +283,12 @@ const Normal = () => {
       setIsSpin(true);
 
       // Fetch request stats
-      const reqData = await axios.get("http://148.113.44.181:3000/api/v1/requests/get-request-data");
+      const reqData = await axios.get("/api/v1/requests/get-request-data");
       console.log(reqData)
       setResponses(reqData.data.data[0]);
 
       // Fetch request list
-      const response = await axios.get("http://148.113.44.181:3000/api/v1/requests/get-all-requests");
+      const response = await axios.get("/api/v1/requests/get-all-requests");
       const allRequests = response.data.data.reverse();
 
       setVltRequests(allRequests);
@@ -303,7 +303,7 @@ const Normal = () => {
     try {
       setIsSpin(true);
 
-      const response = await axios.get("http://148.113.44.181:3000/api/v1/requests/get-nrm-requests");
+      const response = await axios.get("/api/v1/requests/get-nrm-requests");
       const allRequests = response.data.data.reverse();
 
       setVltRequests(allRequests);
@@ -318,7 +318,7 @@ const Normal = () => {
     try {
       setIsSpin(true);
 
-      const response = await axios.get("http://148.113.44.181:3000/api/v1/requests/get-alt-requests");
+      const response = await axios.get("/api/v1/requests/get-alt-requests");
       const allRequests = response.data.data.reverse();
 
       setVltRequests(allRequests);
@@ -344,7 +344,7 @@ const Normal = () => {
   const updateStatus = async (id, status) => {
     try {
       setIsSpin(true);
-      await axios.put("http://148.113.44.181:3000/api/v1/requests/update-status", {
+      await axios.put("/api/v1/requests/update-status", {
         updtId: id,
         status: status,
       });

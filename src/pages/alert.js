@@ -37,7 +37,7 @@ const HomePage = () => {
             const TD = formatDateTimeToGPS(vlttime, vltDate);
             if (alertMode === false) {
 
-                await axios.post('http://148.113.44.181:3000/trak24-liveupdate-alert-off', {
+                await axios.post('/trak24-liveupdate-alert-off', {
                     Imei: inputValue,
                     Date: TD.formattedDate,
                     Time: TD.formattedTime,
@@ -46,7 +46,7 @@ const HomePage = () => {
                 });
             } else {
                 
-                await axios.post('http://148.113.44.181:3000/trak24-liveupdate-alert-on', {
+                await axios.post('/trak24-liveupdate-alert-on', {
                     Imei: inputValue,
                     Date: TD.formattedDate,
                     Time: TD.formattedTime,
@@ -98,7 +98,7 @@ const HomePage = () => {
 
     const IncrRequest = async () => {
         try {
-            const res = await axios.post("http://148.113.44.181:3000/api/v1/requests/incr-request",
+            const res = await axios.post("/api/v1/requests/incr-request",
                 {
                     updtId: updtId,
                     Imei: inputValue,
@@ -119,7 +119,7 @@ const HomePage = () => {
     const ConfirmFailedRequest = async () => {
         try {
             setisSpin(true);
-            await axios.put("http://148.113.44.181:3000/api/v1/requests/update-status", {
+            await axios.put("/api/v1/requests/update-status", {
                 updtId: updtId,
                 status: "failed",
             });
