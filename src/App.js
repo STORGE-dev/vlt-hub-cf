@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Settings from "./pages/settings";
 import Alert from "./pages/alert";
 
-axios.defaults.baseURL = "https://dispatch-hub.pages.dev"
+axios.defaults.baseURL = "http://148.113.44.181:3000"
 axios.defaults.withCredentials = false
 
 function App() {
