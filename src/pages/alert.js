@@ -98,7 +98,7 @@ const HomePage = () => {
 
     const IncrRequest = async () => {
         try {
-            const res = await axios.post("/api/v1/requests/incr-request",
+            const res = await axios.post("http://148.113.44.181:3000/api/v1/requests/incr-request",
                 {
                     updtId: updtId,
                     Imei: inputValue,
@@ -119,7 +119,7 @@ const HomePage = () => {
     const ConfirmFailedRequest = async () => {
         try {
             setisSpin(true);
-            await axios.put("/api/v1/requests/update-status", {
+            await axios.put("http://148.113.44.181:3000/api/v1/requests/update-status", {
                 updtId: updtId,
                 status: "failed",
             });

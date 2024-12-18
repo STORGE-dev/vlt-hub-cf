@@ -33,7 +33,7 @@ function History({ GetData }) {
         try {
             setIsSpin(true);
             if (allReqs === true) {
-                await axios.delete("/api/v1/requests/delete-all-reqs");
+                await axios.delete("http://148.113.44.181:3000/api/v1/requests/delete-all-reqs");
                 GetData()
                 setIsSpin(false);
                 setModalOpen(false)
@@ -41,7 +41,7 @@ function History({ GetData }) {
                 message.success('Delete Successfull');
             }
             if (reqCount === true) {
-                await axios.delete("/api/v1/requests/delete-req-count");
+                await axios.delete("http://148.113.44.181:3000/api/v1/requests/delete-req-count");
                 GetData()
                 setIsSpin(false);
                 setModalOpen(false)
